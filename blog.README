@@ -1,0 +1,54 @@
+golang 开源播客
+用户表
+	登陆
+	注册
+user
+	id
+	username
+	password
+	email
+	phone
+	status
+	create_time
+	update_time
+	last_login_time
+	last_login_ip
+
+帖子表
+	发布/修改/删除/查看/点赞
+点赞记录表
+blog
+	id
+	uid
+	title
+	content
+	create_time
+	update_time
+	status
+	view_count
+	like_count
+	comment_count
+	tags
+	category
+	top
+	top_time
+	top_time_end
+
+评论表
+	发布/修改/删除/查看/点赞/回复
+comment
+	id
+	uid
+	blog_id
+	content
+	create_time
+	update_time
+	status
+	view_count
+	like_count
+	reply_count
+	top
+	top_time
+	top_time_end
+
+xorm reverse mysql 'root:@127.0.0.1/gin_react_blog?charset=utf8mb4' ~/go/src/github.com/go-xorm/cmd/xorm/templates/goxorm/
